@@ -1,0 +1,29 @@
+names = [] # names = [] is written person
+phone_numbers = [] # phone number = [] is written person
+num = 4 # number of names and phone numbers = 4
+
+
+for i in range(num): #for full variable in full numbers
+    name = input("Name: ") # name = name which is written by person
+    phone_number = input("Telephone number: ") # for convert to int => int(input("Phone Number: "))
+
+    names.append(name) # to names add name
+    phone_numbers.append(phone_number) # to phone numbers add number
+
+print("\nName\t\t\tTelephone number") # print it
+
+for i in range(num): #for full variable in full numbers
+    print("{}\t\t\t{}".format(names[i], phone_numbers[i])) # is printed full variables
+
+search_term = input("\nEnter search term: ") # search term of name
+
+print("Search result:") #print
+
+if search_term in names: # if search_term in names is had in list of name
+    index = names.index(search_term) # if index = names index which is written by person that = search term is written by person
+    phone_number = phone_numbers[index] # if phone number which had been written first = phone number which was written second
+    print("Name: {}, Telephone number: {}".format(search_term, phone_number)) # print it
+
+else: # in other way
+    print("Name Not Found") # print it
+
